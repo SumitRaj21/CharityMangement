@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charity</title>
+    <link rel="stylesheet" href="charity.css">
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">Charity Donation</div>
+      <nav>
+        <ul id="nav-bar">
+          <li><a href="./index.html" class="nav-link">DashBoard</a></li>
+          <li><a href="#approval" class="nav-link" id="approval">Approval Required</a></li>
+          <li><h4 id="status"></h4></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="approve-charity" class="content-section" style="display: none;"></section>
+    <main class="main-content">
+      <h1 id="project_name"></h1>
+      <h3 id="organization_name"></h3>
+      <h3 id="city"></h3>
+      <h3 id="category"></h3>
+      <div id="goal"></div>
+      <div id="project_overview"></div>
+      <div id="donation_goal"></div>
+    </main>
+  </body>
+         <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="charity.js"></script>
+</html>

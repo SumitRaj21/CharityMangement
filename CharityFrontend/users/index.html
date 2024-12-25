@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">Charity Donation</div>
+        <nav>
+            <ul>
+                <li><a href="#profile" class="nav-link" id="profile">Profile</a></li>
+                <li><a href="#donation-history" class="nav-link" id="donations">Donation History</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Profile Section -->
+    <section id="profile-section" class="content-section"></section>
+
+    
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <h2>Search Donations</h2>
+        <form class="search-form" onsubmit="search(event)">
+            <input type="text" placeholder="Search donations..." class="search-bar" name="project_name" id="project_name">
+            <select name="city" class="dropdown" id="city">
+                <option value="">Select City</option>
+            </select>
+            <select name="category" class="dropdown" id="category">
+                <option value="">Select Category</option>
+            </select>
+            <button type="submit" class="btn">Search</button>
+        </form>
+    </section>
+    <!-- Donation History Section -->
+    <section id="donation-history-section" class="content-section" style="display: none;">
+        <h2>Donation History</h2>
+        <ul id="donation-section">
+            
+        </ul>
+    </section>
+
+    <!-- Main Body -->
+    <main class="main-content">
+        <div class="charity-grid" id="approved">
+            <h2>Charities</h2>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 MyWebsite. All rights reserved.</p>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="index.js"></script>
+</html>

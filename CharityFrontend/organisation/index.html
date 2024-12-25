@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization Page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">Charity Donation</div>
+        <nav>
+            <ul>
+                <li><a href="#profile" class="nav-link" id="profile">Profile</a></li>
+                <li><a href="#charity" class="nav-link" id="charity">Create Charity</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="profile-section" class="content-section"></section>
+    <section id="create-charity" class="content-section" style="display: none;"></section>
+
+    <!-- Main Body -->
+    <main class="main-content">
+        <div class="charity-grid" id="approved">
+            <h2>Approved Charities</h2>
+        </div>
+       
+        <div class="charity-grid"  id="pending">
+            <h2>Pending Charities</h2>
+        </div>
+        <div class="charity-grid" id="rejected">
+            <h2>Rejected Charities</h2>
+        </div>
+        
+    
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 MyWebsite. All rights reserved.</p>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="index.js"></script>
+</html>
